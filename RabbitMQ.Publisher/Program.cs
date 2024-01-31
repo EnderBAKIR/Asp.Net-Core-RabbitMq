@@ -5,6 +5,16 @@ namespace RabbitMQ.Publisher
 {
     class Program
     {
+        public enum LogNames
+        {
+            Critical = 1,
+            Error = 2,
+            Warning = 3,
+            Info = 4,
+
+        }
+
+
         static void Main(string[] args)
         {
             //if we have a cloud rabbitmq we must use this method in Connection 
@@ -22,14 +32,22 @@ namespace RabbitMQ.Publisher
 
             var channel = connection.CreateModel();
 
-            channel.QueueDeclare("hello-queue" , true , false , false);
+            channel.ExchangeDeclare("header-exchange", durable: true, type: ExchangeType.Headers);
 
-            string message = "hello rabbit";
-            var messagebody=Encoding.UTF8.GetBytes(message);
+            Dictionary<string, object> headers = new Dictionary<string, object>();
 
-            channel.BasicPublish(string.Empty, "hello-queue", null, messagebody);
+            headers.Add("format", "pdf");
+            headers.Add("shape4", "a4");
+            headers.Add("x-match", "all");
+
+            var properties = channel.CreateBasicProperties();
+            properties.Headers=headers;
+
+
+            channel.BasicPublish("header-exchange", string.Empty, properties, Encoding.UTF8.GetBytes("header mesajım"));
 
             Console.WriteLine("Mesaj Gönderilmiştir");
+
             Console.ReadLine();
         }
     }

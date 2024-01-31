@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Publisher", "RabbitMQ.Publisher\RabbitMQ.Publisher.csproj", "{F6EFFDB1-77F0-4CEE-AF46-16396E12E215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Publisher", "RabbitMQ.Publisher\RabbitMQ.Publisher.csproj", "{F6EFFDB1-77F0-4CEE-AF46-16396E12E215}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Subscriber", "RabbitMQ.Subscriber\RabbitMQ.Subscriber.csproj", "{B241AB4D-1620-4B05-9ABA-DD0A2D897D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Subscriber", "RabbitMQ.Subscriber\RabbitMQ.Subscriber.csproj", "{B241AB4D-1620-4B05-9ABA-DD0A2D897D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EC4CBC0-49EE-4B87-9B7C-B5885CFD56D8}"
+	ProjectSection(SolutionItems) = preProject
+		DirektExchangeDetails.txt = DirektExchangeDetails.txt
+		FanoutExchangeDetails.txt = FanoutExchangeDetails.txt
+		TopicExchangeDetails.txt = TopicExchangeDetails.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

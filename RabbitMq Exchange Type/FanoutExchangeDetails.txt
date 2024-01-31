@@ -1,0 +1,100 @@
+                                    =>queue=>Subscriber
+Producer(Publisher)=>FanoutExchange =>queue=>Subscriber
+                                    =>queue=>Subscriber
+
+In fanout exchange, the exchange method sends the same messages produced by the publisher to all queues and then to all subscribers.
+The queue should be created by the subscriber who wants to receive the message.
+
+----------InPublisher----------
+ static void Main(string[] args)
+        {
+            //if we have a cloud rabbitmq we must use this method in Connection 
+            //var factory = new ConnectionFactory() {factory.uri = new Uri("Cloud Link")}
+
+            var factory = new ConnectionFactory()//Connect RabbitMQ with Docker Container.
+            {
+                HostName = "localhost",
+                Port = 5672,
+                UserName = "guest",
+                Password = "guest"
+            };
+
+            using var connection = factory.CreateConnection();
+
+            var channel = connection.CreateModel();
+
+            channel.ExchangeDeclare("logs-fanout" , durable:true , type:ExchangeType.Fanout);
+
+            Enumerable.Range(1, 50).ToList().ForEach(Range =>
+            {
+                string message = $"Log{Range}";
+                var messagebody = Encoding.UTF8.GetBytes(message);
+                
+                channel.BasicPublish("logs-fanout", "", null, messagebody);
+
+                Console.WriteLine("Mesaj Gönderilmiþtir");
+            });
+
+          
+            Console.ReadLine();
+        }
+       ----------InPublisher----------
+
+
+
+       ----------InSubscriber---------
+        static void Main(string[] args)
+        {
+            //if we have a cloud rabbitmq we must use this method in Connection 
+            //var factory = new ConnectionFactory() {factory.uri = new Uri("Cloud Link")}
+
+            var factory = new ConnectionFactory()//Connect RabbitMQ with Docker Container.
+            {
+                HostName = "localhost",
+                Port = 5672,
+                UserName = "guest",
+                Password = "guest"
+            };
+
+            using var connection = factory.CreateConnection();
+
+            var channel = connection.CreateModel();
+
+            var randomQueueName =channel.QueueDeclare().QueueName;
+
+            //channel.QueueDeclare(randomQueueName, true, false, false);//if we dont want queue not delete , must use this method
+
+            channel.QueueBind(randomQueueName,"logs-fanout","", null);
+
+
+
+
+            channel.BasicQos(0,1,false);//=> this "false" , answer to whether or not the specified number of messages should be sent to subscribers by dividing them. 
+
+           /* channel.QueueDeclare("hello-queue", true, false, false);*///if u have same queue in publisher this method unncessary but harmless , and u must use same options for queue.
+
+            var consumer = new EventingBasicConsumer(channel);
+
+            channel.BasicConsume(randomQueueName,false, consumer);
+
+            Console.WriteLine("listening...");
+
+            consumer.Received += (object? sender, BasicDeliverEventArgs e) =>
+            {
+                var message = Encoding.UTF8.GetString(e.Body.ToArray());
+
+                Thread.Sleep(1500);
+                Console.WriteLine("Uyarý:  " + message);
+
+                channel.BasicAck(e.DeliveryTag, false);
+            };
+
+
+
+
+            Console.ReadLine();
+        }
+
+      
+    }
+     ----------InSubscriber---------
