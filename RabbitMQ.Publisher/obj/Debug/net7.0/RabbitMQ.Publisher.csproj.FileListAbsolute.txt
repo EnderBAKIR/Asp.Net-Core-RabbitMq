@@ -1,0 +1,17 @@
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Publisher.exe
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Publisher.deps.json
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Publisher.runtimeconfig.json
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Publisher.dll
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Publisher.pdb
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.csproj.AssemblyReference.cache
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.AssemblyInfoInputs.cache
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.AssemblyInfo.cs
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.csproj.CoreCompileInputs.cache
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.csproj.CopyComplete
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.dll
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\refint\RabbitMQ.Publisher.dll
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.pdb
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\RabbitMQ.Publisher.genruntimeconfig.cache
+C:\Users\Ender\OneDrive\Masaüstü\Masaüstü\RabbitMQ\RabbitMQ.Publisher\obj\Debug\net7.0\ref\RabbitMQ.Publisher.dll
