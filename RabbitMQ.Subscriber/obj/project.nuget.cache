@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gb38ppWfN+Jz3JKWSoz0GNU0PesXjMQSqQy4FkRqkoHrpeGFMsuB2f0LCtuY5gj68XTUkmq6VNezp9h5WFYXww==",
+  "dgSpecHash": "6f3glIDKJ6IMuj1fTW5ivRCPfFOph1YU7wOdGDVaWdM3Q+8N71gWCDhe6NwdJlJ5a0yvUXtzeWdPtFv+s1Y64g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Masaüstü\\RabbitMQ\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
+  "projectFilePath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ender\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\Ender\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",

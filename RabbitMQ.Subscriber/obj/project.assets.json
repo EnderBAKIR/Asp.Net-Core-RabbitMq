@@ -43,6 +43,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -115,11 +125,17 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "RabbitMQ.Client >= 6.8.1"
+      "RabbitMQ.Client >= 6.8.1",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -129,11 +145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Masaüstü\\RabbitMQ\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
+      "projectUniqueName": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
       "projectName": "RabbitMQ.Subscriber",
-      "projectPath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Masaüstü\\RabbitMQ\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
+      "projectPath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQ.Subscriber\\RabbitMQ.Subscriber.csproj",
       "packagesPath": "C:\\Users\\Ender\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Masaüstü\\RabbitMQ\\RabbitMQ.Subscriber\\obj\\",
+      "outputPath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQ.Subscriber\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -154,7 +170,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

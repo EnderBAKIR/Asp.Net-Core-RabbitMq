@@ -1,7 +1,8 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-
+using Shared;
 using System.Text;
+using System.Text.Json;
 
 namespace RabbitMQ.Subscriber
 {
@@ -48,8 +49,10 @@ namespace RabbitMQ.Subscriber
             {
                 var message = Encoding.UTF8.GetString(e.Body.ToArray());
 
+                Product product = JsonSerializer.Deserialize<Product>(message);
+
                 Thread.Sleep(1500);
-                Console.WriteLine("Uyarı:  " + message);
+                Console.WriteLine($"Uyarı: {product.Id}-{product.Name}-{product.price}-{product.stock}");
                 //File.AppendAllText("log-critical.txt", message + "\n");
                 channel.BasicAck(e.DeliveryTag, false);
             };
