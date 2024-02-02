@@ -1,0 +1,22 @@
+﻿@model UserSignInViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<form  asp-controller="Account" asp-action="Login" method="post" >
+    <div class="mb-3">
+        
+        <input type="username" asp-for="username" class="form-control transparent" placeholder="Kullanıcı adınızı giriniz...">
+        <span asp-validation-for="username" class="text-danger"></span>
+       
+    </div>
+    <div class="mb-3">
+        <input type="password" asp-for="password" class="form-control transparent" placeholder="Şifreniz giriniz...">
+        <span asp-validation-for="password" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+</form>
+

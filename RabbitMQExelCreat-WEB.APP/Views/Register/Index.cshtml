@@ -1,0 +1,88 @@
+﻿@model UserRegisterViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<style>
+    .form-holder {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form-holder .lnr {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .form-holder label {
+        display: none;
+    }
+
+    .form-holder input {
+        width: 100%;
+        padding: 15px 20px 15px 50px;
+        border: 1px solid #e5e5e5;
+        border-radius: 50px;
+        background-color: #f5f5f5;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s ease 0s;
+    }
+
+    .form-holder input:focus {
+        background-color: #fff;
+        border-color: #f5f5f5;
+    }
+
+    .form-holder .submit-btn {
+        width: 100%;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color: #ff5e14;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .form-holder .submit-btn:hover {
+        background-color: #333;
+    }
+    </style>
+<form action="" method="post">
+    <h3>Kayıt Olun</h3>
+    <div class="form-holder">
+        <span class="lnr lnr-user"></span>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control" placeholder="Ad">
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-holder">
+        <span class="lnr lnr-envelope"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" placeholder="E mail">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+
+        <div>
+            <span class="lnr lnr-lock"></span>
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" placeholder="Şifre">
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn submit-btn">Kayıt Ol</button>
+</form>
+
+
+

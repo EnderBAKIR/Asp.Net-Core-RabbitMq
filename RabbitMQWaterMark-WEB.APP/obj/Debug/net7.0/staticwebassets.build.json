@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oN5Rsv4j6X31rkxdQfwdoNAaSZLV+nMEseL+CzQV9Ok=",
+  "Hash": "FYRrELsANfvAB3ycGS1dGiSxxkwhFyh1MlO8aMiis+U=",
   "Source": "RabbitMQWaterMark-WEB.APP",
   "BasePath": "_content/RabbitMQWaterMark-WEB.APP",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\images\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "SourceId": "RabbitMQWaterMark-WEB.APP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\",
+      "BasePath": "_content/RabbitMQWaterMark-WEB.APP",
+      "RelativePath": "images/9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\images\\watermarks\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "SourceId": "RabbitMQWaterMark-WEB.APP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\",
+      "BasePath": "_content/RabbitMQWaterMark-WEB.APP",
+      "RelativePath": "images/watermarks/9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\watermarks\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg"
     },
     {
       "Identity": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\js\\site.js",

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\images\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "PackagePath": "staticwebassets\\images\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\images\\watermarks\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg",
+      "PackagePath": "staticwebassets\\images\\watermarks\\9bb76ea9-1a3a-437c-b40c-5063b484c3a7.jpg"
+    },
+    {
       "Id": "C:\\Users\\Ender\\OneDrive\\Masaüstü\\Belgeler\\GitHub\\Asp.Net-Core---RabbitMq\\RabbitMQWaterMark-WEB.APP\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

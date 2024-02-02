@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RabbitMQExelCreat-WEB.APP.props" />
+</Project>
