@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQWaterMark-WEB.APP", "RabbitMQWaterMark-WEB.APP\RabbitMQWaterMark-WEB.APP.csproj", "{06A56A7A-0434-4FD3-8657-BE4D61B310A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQExelCreat-WEB.APP", "RabbitMQExelCreat-WEB.APP\RabbitMQExelCreat-WEB.APP.csproj", "{F7048521-CFBA-4DA5-811F-1B5DCFB2E273}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQExelCreat-WEB.APP", "RabbitMQExelCreat-WEB.APP\RabbitMQExelCreat-WEB.APP.csproj", "{F7048521-CFBA-4DA5-811F-1B5DCFB2E273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCreateWorkerService", "FileCreateWorkerService\FileCreateWorkerService.csproj", "{4B5BE66F-4754-4B0C-A79A-2B688CA82DEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{F7048521-CFBA-4DA5-811F-1B5DCFB2E273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7048521-CFBA-4DA5-811F-1B5DCFB2E273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7048521-CFBA-4DA5-811F-1B5DCFB2E273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5BE66F-4754-4B0C-A79A-2B688CA82DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5BE66F-4754-4B0C-A79A-2B688CA82DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5BE66F-4754-4B0C-A79A-2B688CA82DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5BE66F-4754-4B0C-A79A-2B688CA82DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

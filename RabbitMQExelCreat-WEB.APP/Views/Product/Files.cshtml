@@ -1,0 +1,52 @@
+﻿@model List<UserFile>
+@{
+    ViewData["Title"] = "Files";
+}
+add style for table look fascinating
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+<h1>Files</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                File Name
+            </th>
+            <th>
+                Created Date
+            </th>
+            <th>
+                File status
+            </th>
+            <th>
+                Download
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FileName</td>
+            <td>@item.GetCreatedDate</td>
+            <td>@item.FileStatus</td>
+            <td>
+                <a href="~/files/@item.FilePath" class="btn btn-primary @(item.FileStatus==FileStatus.Creating ? "disabled": "")">Download</a>
+            </td>
+            
+
+
+        </tr>
+    }
+</table>
+
+
