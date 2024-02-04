@@ -44,7 +44,7 @@ namespace RabbitMQExelCreat_WEB.APP.Controllers
             //rabbitmq ya mesaj gönderme
             _rabbitMQPublisher.Publish(new Shared.CreateExcelMessage
             {
-                userId = user.Id.ToString(),
+                
                 FileId = userFile.Id
             });
             
@@ -59,7 +59,7 @@ namespace RabbitMQExelCreat_WEB.APP.Controllers
         {
             var user =await _userManager.FindByNameAsync(User.Identity.Name);
 
-            var value = await _context.UserFiles.Where(x => x.UserId == user.Id.ToString()).ToListAsync();//this method for get all files for this user
+            var value = await _context.UserFiles.Where(x => x.UserId == user.Id.ToString()).OrderByDescending(x=>x.Id).ToListAsync();//this method for get all files for this user
             return View(value);
         }
     }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
+using RabbitMQExelCreat_WEB.APP.Hubs;
 using RabbitMQExelCreat_WEB.APP.Models;
 using RabbitMQExelCreat_WEB.APP.Service;
 
@@ -33,7 +34,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -51,8 +52,14 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<MyHub>("/myHub");
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
 
 app.Run();
