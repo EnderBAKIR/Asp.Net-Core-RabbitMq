@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RabbitMQ.Subscriber
 build_property.ProjectDir = C:\Users\Ender\OneDrive\Masaüstü\Belgeler\GitHub\Asp.Net-Core---RabbitMq\RabbitMQ.Subscriber\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
